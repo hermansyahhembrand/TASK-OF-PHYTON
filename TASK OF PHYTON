@@ -1,0 +1,33 @@
+i=a=b=c=0
+nama=[]
+nim=[]
+tugas=[]
+uts=[]
+uas=[]
+akhir=[]
+while True :
+    print'No',i+1
+    nama = raw_input("Nama :")
+    nim = raw_input("NIM :")
+    tugas = input("Nilai Tugas :")
+    uts = input("Nilai UTS :")
+    uas = input("Nilai UAS :")
+    akhir =int(tugas*30/100)+(uts*35/100)+(uas*35/100)
+    tambah =raw_input("Tambah data (y/t) ?")
+    while tambah != 'y' and tambah != 't':
+          tambah = raw_input("Tambah data (y/t) ?")
+    i+=1
+    if tambah == 't':
+        print"======================================================================"
+        print"|NO | NAMA | NIM | NILAI TUGAS | NILAI UTS | NILAI UAS | NILAI AKHIR |"
+        print"======================================================================"
+        for n in range(i):
+          print "|",n+1,"|" ,nama,"|",nim,"|",tugas,"|" ,uts,"|",uas,"|",akhir,"|"
+          break
+print"NAMA ; HERMANSYAH"
+print"KELAS ; TI.17.F1"
+print"NIM  ; 311710516"
+
+
+
+
